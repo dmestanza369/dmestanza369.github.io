@@ -46,5 +46,6 @@ prize-list-11=><b>AdaByron Madrid (VI Edición, 2020)</b> Concurso de Programaci
 prize-type-cont=>Certamen,
 prize-type-edit=>Edición,
 prize-type-meet=>Jornada,
+title=>[WIP] David Mestanza - Compositor y Developer
 subtitle=>Compositor y Developer
 university=>Universidad Rey Juan Carlos
