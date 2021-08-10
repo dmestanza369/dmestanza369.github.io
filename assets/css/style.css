@@ -1,0 +1,7 @@
+.dark-link:link, .dark-link:visited, .dark-link:hover, .dark-link:active {
+  color: #343a40 !important;
+}
+
+.red-link:link, .red-link:visited, .red-link:hover, .red-link:active {
+  color: #dc3545 !important;
+}

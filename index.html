@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,25 +10,22 @@
   
   <title>David Mestanza - Músico y Developer</title>
 
-  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/logo-circular.ico" type="image/x-icon">
   
-  <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/maicons.css">
   
-  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/owl-carousel/owl.carousel.css">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css"> -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/nice-select/css/nice-select.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/fancybox/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/virtual.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css">
 
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/animate/animate.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/owl-carousel/owl.carousel.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/nice-select/css/nice-select.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/fancybox/css/jquery.fancybox.min.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/css/virtual.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/css/topbar.virtual.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body class="theme-red">
   
@@ -37,18 +34,18 @@
     <span class="ti-arrow-up"></span>
   </div>
   
-  <!-- Setting button -->
+  <!-- <-- Setting button --
   <div class="config">
     <div class="template-config">
-      <!-- Settings -->
+      <-- Settings --
       <div class="d-block">
         <button class="btn btn-fab btn-sm" id="sideel" title="Settings"><span class="ti-settings"></span></button>
       </div>
-      <!-- Puschase -->
+      <-- Puschase --
       <div class="d-block">
         <a href="https://macodeid.com/projects/virtual-folio/" class="btn btn-fab btn-sm" title="Get this template" data-toggle="tooltip" data-placement="left"><span class="ti-download"></span></a>
       </div>
-      <!-- Help -->
+      <-- Help --
       <div class="d-block">
         <a href="#" class="btn btn-fab btn-sm" title="Help" data-toggle="tooltip" data-placement="left"><span class="ti-help"></span></a>
       </div>
@@ -70,47 +67,48 @@
         <option value="blog-minibar">Blog (Minibar)</option>
       </select>
     </div>
-  </div>
+  </div> -->
   
-  <div class="vg-page page-home" id="home" style="background-image: url(../assets/img/bg_image_1.jpg)">
+  <div class="vg-page page-home" id="home" style="background-image: url(assets/img/bg_image_1.png)">
     <!-- Navbar -->
     <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
       <div class="container">
-        <a href="" class="navbar-brand">V-Folio</a>
+        <a href="" class="navbar-brand"><img src="assets/logo-circular.ico" width="32px" height="32px">   David Mestanza</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
           <span class="ti-menu"></span>
         </button>
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a href="#home" class="nav-link" data-animate="scrolling">Home</a>
+              <a href="#home" class="nav-link" data-animate="scrolling" data-lang="home">Principal</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link" data-animate="scrolling">About</a>
+              <a href="#about" class="nav-link" data-animate="scrolling" data-lang="about">Sobre mí</a>
             </li>
             <li class="nav-item">
-              <a href="#portfolio" class="nav-link" data-animate="scrolling">Portfolio</a>
+              <a href="#portfolio" class="nav-link" data-animate="scrolling" >Portfolio</a>
             </li>
             <li class="nav-item">
               <a href="#blog" class="nav-link" data-animate="scrolling">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav-link" data-animate="scrolling">Contact</a>
+              <a href="#contact" class="nav-link" data-animate="scrolling" data-lang="contact">Contacto</a>
             </li>
           </ul>
           <ul class="nav ml-auto">
             <li class="nav-item">
-              <button class="btn btn-fab btn-theme no-shadow">En</button>
+              <button class="btn btn-fab btn-theme no-shadow" id="translate" data-text="Eng,Esp" data-file="es,en" data-index="1" >Eng</button>
             </li>
           </ul>
         </div>
       </div>
     </div> <!-- End Navbar -->
     <!-- Caption header -->
-    <div class="caption-header text-center wow zoomInDown">
+    <div class="caption-header text-center wow zoomIn">
       <!-- <h5 class="fw-normal">Welcome</h5> -->
-      <h1 class="fw-light mb-4">David <b class="fg-theme">Mestanza</b></h1>
-      <div class="badge">Músico y Developer</div>
+      <h1 class="fw-light mb-4">David Mestanza</h1>
+      <div class="badge" href="#about" data-animate="scrolling" data-lang="subtitle">Compositor y Developer</div><br>
+      <h5 class="fw-light mb-4"><i>(Page in progress)</i></h5>
     </div> <!-- End Caption header -->
     <div class="floating-button"><span class="ti-mouse"></span></div>
   </div>
@@ -120,25 +118,23 @@
       <div class="row">
         <div class="col-lg-4 py-3">
           <div class="img-place wow fadeInUp">
-            <img src="../assets/img/person.jpg" alt="">
+            <img src="assets/img/person.jpg" alt="">
           </div>
         </div>
         <div class="col-lg-6 offset-lg-1 wow fadeInRight">
           <h1 class="fw-light">David Mestanza</h1>
-          <h5 class="fg-theme mb-3">Músico y Developer</h5>
-          <p class="text-muted">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form but the majority have suffered alteration in some</p>
+          <h5 class="fg-theme mb-3" data-lang="subtitle">Músico y Developer</h5>
+          <p class="text-muted" data-lang="description">Actualmente estudiando en la Universidad Rey Juan Carlos.</p>
           <ul class="theme-list">
-            <li><b>De:</b> Algeciras</li>
-            <li><b>Vive en:</b> Madrid</li>
-            <li><b>Edad:</b> 21</li>
-            <li><b>Género:</b> No binario</li>
-            <li><b>Correo electrónico:</b> <a src="mailto:david.mestanza@gmail.com">david.mestanza@gmail.com</a></li>
+            <li><b data-lang="from">De:</b> Algeciras</li>
+            <li><b data-lang="lives">Vive en:</b> Madrid</li>
+            <li><b data-lang="age">Edad:</b> 21</li>
           </ul>
           <!-- <button class="btn btn-theme-outline">Download CV</button> -->
         </div>
       </div>
     </div>
-    <div class="container py-5">
+    <!-- <div class="container py-5">
       <h1 class="text-center fw-normal wow fadeIn">Habilidades</h1>
       <div class="row py-3">
         <div class="col-md-6">
@@ -194,79 +190,100 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="container pt-5">
       <div class="row">
         <div class="col-md-6 wow fadeInRight">
-          <h2 class="fw-normal">Formación académica</h2>
+          <h2 class="fw-normal" data-lang="Education">Formación académica</h2>
           <ul class="timeline mt-4 pr-md-5">
             <li>
-              <div class="title">2017 - Actualmente</div>
+              <div class="title">2017 - Act.</div>
               <div class="details">
-                <h5>Doble Grado en Matemáticas e Ingeniería del Software</h5>
-                <small class="fg-theme">Universidad Rey Juan Carlos</small>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                <h5 data-lang="career">Doble Grado en Matemáticas e Ingeniería del Software</h5>
+                <small class="fg-theme" data-lang="university">Universidad Rey Juan Carlos</small>
+                <p></p>
               </div>
             </li>
             <li>
               <div class="title">2012 - 2017</div>
               <div class="details">
-                <h5>Enseñanzas Profesionales de Música</h5>
-                <small class="fg-theme">Conservatorio Paco de Lucía</small>
-                <p>Especialidad de Clarinete y Composición.</p>
+                <h5 data-lang="music-study">Enseñanzas Profesionales de Música</h5>
+                <small class="fg-theme" data-lang="music-conservatory">Conservatorio Paco de Lucía</small>
+                <p data-lang="music-study-2">Especialidad de Clarinete y Composición.</p>
               </div>
             </li>
             <li>
               <div class="title">2015 - 2017</div>
               <div class="details">
-                <h5>Bachillerato</h5>
+                <h5 data-lang="gce">Bachillerato</h5>
                 <small class="fg-theme">IES Kursaal</small>
-                <p>En la modalidad de ciencias, fue una etapa muy fructífera en cuanto proyectos.</p>
+                <p data-lang="gce-2">En la modalidad de ciencias, fue una etapa muy fructífera en cuanto proyectos.</p>
+              </div>
+            </li>
+          </ul>
+
+          <h2 class="fw-normal" data-lang="education-2">Formación complementaria</h2>
+          <ul class="timeline mt-4 pr-md-5">
+            <li>
+              <div class="title">2012 - 2015</div>
+              <div class="details">
+                <h5>ESTALMAT</h5>
+                <small class="fg-theme" data-lang="estalmat">Programa de Estímulo del Talento Matemático.</small>
+                <p></p>
               </div>
             </li>
           </ul>
         </div>
+
         <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
-          <h2 class="fw-normal">Experiencia laboral y proyectos</h2>
+          <h2 class="fw-normal" data-lang="exp">Experiencia laboral y proyectos</h2>
           <ul class="timeline mt-4 pr-md-5">
+            <li>
+              <div class="title">2021</div>
+              <div class="details">
+                <h5>Bismuto</h5>
+                <small class="fg-theme" data-lang="exp-music-total">Compositor y productor musical, grabación, mezcla y masterización</small>
+                <p></p>
+              </div>
+            </li>
             <li>
               <div class="title">2019 - 2020</div>
               <div class="details">
                 <h5>Capítulo I: Delta</h5>
-                <small class="fg-theme">Composición</small>
-                <p>EP de 6 canciones</p>
+                <small class="fg-theme" data-lang="exp-music-comp">Compositor</small>
+                <p data-lang="exp-delta-description">EP de 6 canciones a piano y clarinete.</p>
               </div>
             </li>
             <li>
               <div class="title">2019 - 2020</div>
               <div class="details">
                 <h5>Oniria Crimes</h5>
-                <small class="fg-theme">Productor de SFX, desarrollador y programador junior.</small>
-                <p>La experiencia obtenida en un total de 6 meses a media jornada.</p>
+                <small class="fg-theme" data-lang="exp-oc">Productor de SFX, desarrollador y programador junior</small>
+                <p data-lang="exp-oc-description">La experiencia obtenida fue en un total de 6 meses a media jornada.</p>
               </div>
             </li>
             <li>
               <div class="title">2019 - 2020</div>
               <div class="details">
-                <h5>Anotador de Baloncesto</h5>
-                <small class="fg-theme">Federación de Baloncesto de Madrid</small>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                <h5 data-lang="exp-basket">Anotador de Baloncesto</h5>
+                <small class="fg-theme" data-lang="exp-basket-description">Federación de Baloncesto de Madrid</small>
+                <p></p>
               </div>
             </li>
             <li>
               <div class="title">2018</div>
               <div class="details">
                 <h5>El Monte de las Ánimas</h5>
-                <small class="fg-theme">Composición y producción musical, grabación, mezcla y masterización</small>
-                <p>Este fue mi primer trabajo en un videojuego.</p>
+                <small class="fg-theme" data-lang="exp-music-total">Compositor y productor musical, grabación, mezcla y masterización</small>
+                <p data-lang="exp-emdla-description">Este fue mi primer trabajo musical en un videojuego y se publicó un EP de 4 canciones.</p>
               </div>
             </li>
             <li>
               <div class="title">2017 - 2019</div>
               <div class="details">
-                <h5>Profesor particular</h5>
-                <small class="fg-theme">ESO y Bachillerato</small>
-                <p>Los alumnos obtuvieron los resultados esperados una vez finalizado el curso.</p>
+                <h5 data-lang="exp-prof">Profesor particular</h5>
+                <small class="fg-theme" data-lang="exp-prof-courses">ESO y Bachillerato</small>
+                <p data-lang="exp-prof-description">Los alumnos mejoraron sus resultados según avanzaba el curso.</p>
               </div>
             </li>
           </ul>
@@ -277,60 +294,85 @@
   
   <div class="vg-page page-service">
     <div class="container">
-      <div class="text-center wow fadeInUp">
+      <!-- <div class="text-center wow fadeInUp">
         <div class="badge badge-subhead">Service</div>
+      </div> -->
+      <h1 class="fw-normal text-center wow fadeInUp" data-lang="prize">Premios y Participaciones</h1>
+      <div class="row mt-5 justify-content-center">
+        <div class="col-md-6 col-lg-4 col-xl-4">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="mai-medal"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Jóvenes Investigadores</h4><h5 class="fg-theme">(III <span data-lang="prize-type-cont">Certamen,</span> 2015)</h5>
+              <p data-lang="prize-ji-2015">Tercer Premio en la categoría de <i>Humanidades</i> con el proyecto <i>Relaciones entre la mitología grecolatina y la ciencia</i>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-4">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <i class="bi-trophy"></i>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Ciencia en Acción</h4><h5 class="fg-theme">(XVII <span data-lang="prize-type-edit">Edición,</span> 2016)</h5>
+              <p data-lang="prize-cea-2016">Primer Premio ex Aequo en este Certamen Internacional celebrado en 2016 con el proyecto <i>Robot lazarillo</i>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-4">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="bi-trophy"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Jóvenes Investigadores</h4><h5 class="fg-theme">(IV <span data-lang="prize-type-cont">Certamen,</span> 2016)</h5>
+              <p data-lang="prize-ji-2016">Primer Premio en la categoría <i>Ciencias</i> con el proyecto <i>Robot lazarillo</i>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-4">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="bi-trophy"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Diverciencia Algeciras</h4><h5 class="fg-theme">(XI <span data-lang="prize-type-meet">Jornada,</span> 2017)</h5>
+              <p data-lang="prize-da-2017">Primer Premio en la modalidad de <i>Trabajo Digital</i> con el proyecto <i>Not for Dummies</i>.</p>
+            </div>
+          </div>
+        </div>  
+        <div class="col-md-6 col-lg-4 col-xl-4">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="mai-medal-outline"></span><span class="mai-medal"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Jóvenes Investigadores</h4><h5 class="fg-theme">(V <span data-lang="prize-type-cont">Certamen,</span> 2017)</h5>
+              <p data-lang="prize-ji-2017">Segundo y Tercer Premio en la categoría de <i>Ciencias</i> con los proyectos <i>Not for Dummies</i> y <i>Ciencia a través de la cámara</i>, respectivamente.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <h1 class="fw-normal text-center wow fadeInUp">What can i do?</h1>
-      <div class="row mt-5">
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-paint-bucket"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">Web Design</h4>
-              <p>There are many variations of passages of Lorem Ipsum available</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-search"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">SEO</h4>
-              <p>There are many variations of passages of Lorem Ipsum available</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-vector"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">UI/UX Design</h4>
-              <p>There are many variations of passages of Lorem Ipsum available</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-desktop"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">Web Development</h4>
-              <p>There are many variations of passages of Lorem Ipsum available</p>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <ul class="theme-list">
+        <li><div class="wow fadeInRight" data-lang="prize-list-1"><b>Olimpiada Matemática SAEM THALES (XXIX Edición, 2013)</b> Provincia de Cádiz.</div></li>
+        <li><div class="wow fadeInRight" data-wow-delay="20ms" data-lang="prize-list-2"><b>Our Pluto (2015)</b> Participación en el proyecto llevado por la NASA.</div></li>
+        <li><div class="wow fadeInRight" data-wow-delay="40ms" data-lang="prize-list-3"><b>Diverciencia Algeciras (IX Edición, 2015)</b> Trabajo de investigación <i>Relaciones entre la mitología grecolatina y la ciencia</i>.</div></li>
+        <li><div class="wow fadeInRight" data-wow-delay="60ms" data-lang="prize-list-4"><b>Diverciencia Algeciras (X Edición, 2016)</b> <i>Maratón científica</i> y <i>Robot lazarillo</i>.</div></li>
+        <li><div class="wow fadeInRight" data-wow-delay="80ms" data-lang="prize-list-5"><b>Science on Stage (X Edición, 2017)</b> Proyecto <i>Robot Lazarillo (Tech-Lab Kursaal)</i> en la categoría <i>Sociedad y Tecnología</i>.</div></li>
+        <li><div class="wow fadeInRight" data-wow-delay="100ms" data-lang="prize-list-6"><b>Ciencia en Acción (XVIII Edición, 2017)</b> Proyecto <i>Tech-Lab Kursaal</i>.</div></li>
+        <li><div class="wow fadeInRight" data-wow-delay="120ms" data-lang="prize-list-7"><b>Google Hash Code 2018</b> Concurso de Programación Competitiva.</div></li>
+        <li><div class="wow fadeInRight" data-wow-delay="140ms" data-lang="prize-list-8"><b>AdaByron Madrid (IV Edición, 2018)</b> Concurso de Programación Competitiva a nivel regional.</div></li>
+        <li><div class="wow fadeInRight" data-wow-delay="160ms" data-lang="prize-list-9"><b>Game Jam Cultura Abierta (I Edición, 2018)</b> Proyecto <i>El Monte de las Ánimas</i> como parte de <i><a class="dark-link" href="ckolmos.com">cKolmos</a></i>.</div></li>
+        <li><div class="wow fadeInRight" data-wow-delay="180ms" data-lang="prize-list-10"><b>Google Hash Code 2019</b> Concurso de Programación Competitiva.</div></li>
+        <li><div class="wow fadeInRight" data-wow-delay="200ms" data-lang="prize-list-11"><b>AdaByron Madrid (VI Edición, 2020)</b> Concurso de Programación Competitiva a nivel regional.</div></li>
+      </ul>
     </div>
   </div>
   
-  <div class="vg-page page-funfact" style="background-image: url(../assets/img/bg_banner.jpg);">
+  <!-- <div class="vg-page page-funfact" style="background-image: url(assets/img/bg_banner.jpg);">
     <div class="container">
       <div class="row section-counter">
         <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
@@ -351,7 +393,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   
   <!-- Portfolio page -->
   <div class="vg-page page-portfolio" id="portfolio">
@@ -359,80 +401,107 @@
       <div class="text-center wow fadeInUp">
         <div class="badge badge-subhead">Portfolio</div>
       </div>
-      <h1 class="text-center fw-normal wow fadeInUp">See my work</h1>
+      <h1 class="text-center fw-normal wow fadeInUp">Este es mi trabajo</h1>
       <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
-        <button class="btn btn-theme-outline selected" data-filter="*">All</button>
-        <button class="btn btn-theme-outline" data-filter=".apps">Apps</button>
-        <button class="btn btn-theme-outline" data-filter=".template">Template</button>
-        <button class="btn btn-theme-outline" data-filter=".ios">IOS</button>
-        <button class="btn btn-theme-outline" data-filter=".ui-ux">UI/UX</button>
-        <button class="btn btn-theme-outline" data-filter=".graphic">Graphic</button>
-        <button class="btn btn-theme-outline" data-filter=".wireframes">Wireframes</button>
+        <button class="btn btn-theme-outline selected" data-filter="*">Todo</button>
+        <button class="btn btn-theme-outline" data-filter=".music">Música</button>
+        <button class="btn btn-theme-outline" data-filter=".sfx">SFX</button>
+        <button class="btn btn-theme-outline" data-filter=".web">Web</button>
+        <button class="btn btn-theme-outline" data-filter=".games">Juegos</button>
+        <button class="btn btn-theme-outline" data-filter=".projects">Proyectos</button>
+        <button class="btn btn-theme-outline" data-filter=".wip">En progreso</button>
       </div>
 
       <div class="gridder my-3">
-        <div class="grid-item apps wow zoomIn">
-          <div class="img-place" data-src="../assets/img/work/work-1.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Mobile Travel App</h5> <p>Travel, Discovery</p>">
-            <img src="../assets/img/work/work-1.jpg" alt="">
+        <div class="grid-item music sfx games wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/trec.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Tu Restaurante en Casa</h5> <p><a href='https://github.com/CodeURJC-DAW-2020-21/webapp10'>Enlace a GitHub</a></p>">
+            <img src="assets/img/work/trec.jpg" alt="">
             <div class="img-caption">
-              <h5 class="fg-theme">Mobile Travel App</h5>
-              <p>Travel, Discovery</p>
+              <h5 class="fg-theme">Bismuto</h5>
+              <p>2021</p>
             </div>
           </div>
         </div>
-        <div class="grid-item template wireframes wow zoomIn">
-          <div class="img-place" data-src="../assets/img/work/work-2.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Music App</h5> <p>Musics</p>">
-            <img src="../assets/img/work/work-2.jpg" alt="">
+        <div class="grid-item web wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/trec.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Tu Restaurante en Casa</h5> <p><a href='https://github.com/CodeURJC-DAW-2020-21/webapp10'>Enlace a GitHub</a></p>">
+            <img src="assets/img/work/trec.jpg" alt="">
             <div class="img-caption">
-              <h5 class="fg-theme">Music App</h5>
-              <p>Musics</p>
+              <h5 class="fg-theme">Tu Restaurante en Casa</h5>
+              <p>2021</p>
             </div>
           </div>
         </div>
-        <div class="grid-item apps ios wow zoomIn">
-          <div class="img-place" data-src="../assets/img/work/work-3.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Gaming Dashboard</h5> <p>Games, Streaming</p>">
-            <img src="../assets/img/work/work-3.jpg" alt="">
+        <div class="grid-item sfx wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/trec.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Tu Restaurante en Casa</h5> <p><a href='https://github.com/CodeURJC-DAW-2020-21/webapp10'>Enlace a GitHub</a></p>">
+            <img src="assets/img/work/trec.jpg" alt="">
             <div class="img-caption">
-              <h5 class="fg-theme">Gaming Dashboard</h5>
-              <p>Games, Streaming</p>
+              <h5 class="fg-theme">Oniria Crimes</h5>
+              <p>2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item music wow zoomIn">
+          <div class="img-place" data-src="https://i.scdn.co/image/ab67616d0000b273c92cefd9853fd0bf55d30ed3" data-fancybox data-caption="<h5 class='fg-theme'>Capítulo I: Delta</h5> <p><a href='https://open.spotify.com/album/1AvAanYU5nZPczG51vA6Ml'>Enlace a Spotify</a></p>">
+            <iframe src="https://open.spotify.com/embed/album/1AvAanYU5nZPczG51vA6Ml" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <div class="img-caption">
+              <h5 class="fg-theme">Capítulo I: Delta</h5>
+              <p>2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item music games wow zoomIn">
+          <div class="img-place" data-src="https://i.scdn.co/image/ab67616d0000b2730ca64a226e1c56921b7e3803" data-fancybox data-caption="<h5 class='fg-theme'>El Monte de las Ánimas</h5> <p><a href='https://open.spotify.com/album/0exHBANkvlOulp3PUJKB0X'>Enlace a Spotify</a><br><a href='https://ckolmos.itch.io/el-monte-de-las-animas'>Enlace a itch.io</a></p>">
+            <iframe src="https://open.spotify.com/embed/album/0exHBANkvlOulp3PUJKB0X" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <div class="img-caption">
+              <h5 class="fg-theme">El Monte de las Ánimas</h5>
+              <p>2018</p>
             </div>
           </div>
         </div>
         <div class="grid-item graphic ui-ux wow zoomIn">
-          <div class="img-place" data-src="../assets/img/work/work-4.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Drugs Delivery App</h5> <p>Health, Drugs</p>">
-            <img src="../assets/img/work/work-4.jpg" alt="">
+          <div class="img-place" data-src="assets/img/work/work-4.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Drugs Delivery App</h5> <p>Health, Drugs</p>">
+            <img src="assets/img/work/work-4.jpg" alt="">
             <div class="img-caption">
-              <h5 class="fg-theme">Drugs Delivery App</h5>
+              <h5 class="fg-theme">Robot Lazarillo</h5>
               <p>Health, Drugs</p>
             </div>
           </div>
         </div>
         <div class="grid-item apps ios wow zoomIn">
-          <div class="img-place" data-src="../assets/img/work/work-5.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Musics Discover</h5> <p>Musics, Dashboard</p>">
-            <img src="../assets/img/work/work-5.jpg" alt="">
+          <div class="img-place" data-src="assets/img/work/work-5.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Musics Discover</h5> <p>Musics, Dashboard</p>">
+            <img src="assets/img/work/work-5.jpg" alt="">
             <div class="img-caption">
-              <h5 class="fg-theme">Musics Discover</h5>
+              <h5 class="fg-theme">Not for Dummies</h5>
               <p>Musics, Dashboard</p>
             </div>
           </div>
         </div>
         <div class="grid-item graphic ui-ux wireframes wow zoomIn">
-          <div class="img-place" data-src="../assets/img/work/work-6.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Games, Streaming</p>">
-            <img src="../assets/img/work/work-6.jpg" alt="">
+          <div class="img-place" data-src="assets/img/work/work-6.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Games, Streaming</p>">
+            <img src="assets/img/work/work-6.jpg" alt="">
             <div class="img-caption">
-              <h5 class="fg-theme">Game Streaming</h5>
+              <h5 class="fg-theme">Maratón científica</h5>
+              <p>Games, Streaming</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item graphic ui-ux wireframes wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/work-6.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Games, Streaming</p>">
+            <img src="assets/img/work/work-6.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Relaciones entre la mitología grecolatina y la ciencia.</h5>
               <p>Games, Streaming</p>
             </div>
           </div>
         </div>
       </div> <!-- End gridder -->
-      <div class="text-center wow fadeInUp">
+      <!-- <div class="text-center wow fadeInUp">
         <a href="javascript:void(0)" class="btn btn-theme">Load More</a>
-      </div>
+      </div> -->
     </div>
   </div> <!-- End Portfolio page -->
   
-  <!-- Testimonial -->
+  <!-- Testimonial
   <div class="vg-page page-testimonial">
     <div class="container">
       <h1 class="text-center fw-normal wow fadeInUp">What Clients are Saying</h1>
@@ -443,7 +512,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="img-place">
-                    <img src="../assets/img/testimonials/testimonials_1.jpg" alt="">
+                    <img src="assets/img/testimonials/testimonials_1.jpg" alt="">
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -451,7 +520,7 @@
                     <div class="testi-content">There are many variations of passages of Lorem Ipsum available, but the majority have suffered</div>
                     <div class="testi-info">
                       <div class="thumb-profile">
-                        <img src="../assets/img/testimonials/testimonials_1.jpg" alt="">
+                        <img src="assets/img/testimonials/testimonials_1.jpg" alt="">
                       </div>
                       <div class="tagline">
                         <h5 class="mb-0">Satria Nugraha</h5>
@@ -466,7 +535,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="img-place">
-                    <img src="../assets/img/testimonials/testimonials_2.jpg" alt="">
+                    <img src="assets/img/testimonials/testimonials_2.jpg" alt="">
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -474,7 +543,7 @@
                     <div class="testi-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe natus expedita ab facilis ut, animi explicabo amet. Voluptatibus possimus iste enim, doloremque, fugiat accusamus nisi optio fugit ratione expedita harum?</div>
                     <div class="testi-info">
                       <div class="thumb-profile">
-                        <img src="../assets/img/testimonials/testimonials_2.jpg" alt="">
+                        <img src="assets/img/testimonials/testimonials_2.jpg" alt="">
                       </div>
                       <div class="tagline">
                         <h5 class="mb-0">Selena Arrini</h5>
@@ -489,59 +558,67 @@
         </div>
       </div>
     </div>
-  </div> <!-- End testimonial -->
+  </div> End testimonial -->
   
   <!-- Client -->
   <div class="vg-page page-client">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_1.svg" alt="">
-          </div>
+      <div style="display: flex;" class="row align-items-center">
+        <div style="display: flex;" class="col-md-6 col-lg-6 col-xl-3 justify-content-center item">
+          <a href="https://sptfy.com/davidmestanza">
+            <div class="img-place wow fadeInUp">
+              <img src="assets/img/logo/spotify.svg" alt="Spotify: https://sptfy.com/davidmestanza">
+            </div>
+          </a>
         </div>
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_2.svg" alt="">
-          </div>
+        <div style="display: flex;" class="col-md-6 col-lg-6 col-xl-3 justify-content-center item">
+          <a href="https://soundcloud.com/dmestanza369">
+            <div class="img-place wow fadeInUp">
+              <img src="assets/img/logo/soundcloud-2.svg" alt="SoundCloud: https://soundcloud.com/dmestanza369">
+            </div>
+          </a>
         </div>
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_3.svg" alt="">
-          </div>
+        <div style="display: flex;" class="col-md-6 col-lg-6 col-xl-3 justify-content-center item">
+          <a href="https://github.com/dmestanza369">
+            <div class="img-place wow fadeInUp">
+              <img src="assets/img/logo/github-icon-i.png" alt="GitHub: https://github.com/dmestanza369">
+            </div>
+          </a>
         </div>
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_4.svg" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_5.svg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_6.svg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_7.svg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_8.svg" alt="">
-          </div>
+        <div style="display: flex;" class="col-md-6 col-lg-6 col-xl-3 justify-content-center item">
+          <a href="https://twitch.tv/dmestanza369">
+            <div class="img-place wow fadeInUp">
+              <img src="assets/img/logo/twitch-purple.svg" alt="Twitch: https://twitch.tv/dmestanza369">
+            </div>
+          </a>
         </div>
       </div>
+      <!-- <div class="row">
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_5.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_6.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_7.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_8.svg" alt="">
+          </div>
+        </div>
+      </div> -->
     </div>
   </div> <!-- End client -->
   
-  <!-- Blog -->
+  <!-- Blog
   <div class="vg-page page-blog" id="blog">
     <div class="container">
       <div class="text-center">
@@ -552,7 +629,7 @@
         <div class="col-md-6 col-lg-4 wow fadeInUp">
           <div class="card">
             <div class="img-place">
-              <img src="../assets/img/work/work-9.jpg" alt="">
+              <img src="assets/img/work/work-9.jpg" alt="">
             </div>
             <div class="caption">
               <a href="javascript:void(0)" class="post-category">Technology</a>
@@ -564,7 +641,7 @@
         <div class="col-md-6 col-lg-4 wow fadeInUp">
           <div class="card">
             <div class="img-place">
-              <img src="../assets/img/work/work-6.jpg" alt="">
+              <img src="assets/img/work/work-6.jpg" alt="">
             </div>
             <div class="caption">
               <a href="javascript:void(0)" class="post-category">Business</a>
@@ -576,7 +653,7 @@
         <div class="col-md-6 col-lg-4 wow fadeInUp">
           <div class="card">
             <div class="img-place">
-              <img src="../assets/img/work/work-1.jpg" alt="">
+              <img src="assets/img/work/work-1.jpg" alt="">
             </div>
             <div class="caption">
               <a href="javascript:void(0)" class="post-category">Design</a>
@@ -590,9 +667,9 @@
         </div>
       </div>
     </div>
-  </div> <!-- End blog -->
+  </div> End blog -->
   
-  <!-- Contact -->
+  <!-- Contact
   <div class="vg-page page-contact" id="contact">
     <div class="container-fluid">
       <div class="text-center wow fadeInUp">
@@ -609,28 +686,28 @@
           <form class="vg-contact-form">
             <div class="form-row">
               <div class="col-12 mt-3 wow fadeInUp">
-                <input class="form-control" type="text" name="Name" placeholder="Your Name">
+                <input class="form-control" type="text" name="Name" placeholder="Nombre">
               </div>
               <div class="col-6 mt-3 wow fadeInUp">
-                <input class="form-control" type="text" name="Email" placeholder="Email Address">
+                <input class="form-control" type="text" name="Email" placeholder="Correo electrónico">
               </div>
               <div class="col-6 mt-3 wow fadeInUp">
-                <input class="form-control" type="text" name="Subject" placeholder="Subject">
+                <input class="form-control" type="text" name="Subject" placeholder="Asunto">
               </div>
               <div class="col-12 mt-3 wow fadeInUp">
-                <textarea class="form-control" name="Message" rows="6" placeholder="Enter message here.."></textarea>
+                <textarea class="form-control" name="Message" rows="6" placeholder="Escriba su mensaje"></textarea>
               </div>
-              <button type="submit" class="btn btn-theme mt-3 wow fadeInUp ml-1">Send Message</button>
+              <button type="submit" class="btn btn-theme mt-3 wow fadeInUp ml-1">Enviar mensaje</button>
             </div>
           </form>
         </div>
       </div>
     </div>
-  </div> <!-- End Contact -->
+  </div> End Contact -->
   
   <!-- Footer -->
   <div class="vg-footer">
-    <h1 class="text-center">Virtual Folio</h1>
+  <!-- <h1 class="text-center">Virtual Folio</h1>
     <div class="container">
       <div class="row">
         <div class="col-lg-4 py-3">
@@ -645,9 +722,9 @@
             <p>Follow me</p>
             <hr class="divider">
             <ul class="list-unstyled">
-              <li><a href="#">Instagram</a></li>
+              <li><a href="instagram.com/dmestanza369">Instagram</a></li>
               <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
+              <li><a href="twitter.com/dmestanza369">Twitter</a></li>
               <li><a href="#">Youtube</a></li>
             </ul>
           </div>
@@ -675,40 +752,27 @@
               <input type="submit" class="btn btn-theme no-shadow" value="Subscribe">
             </div>
           </form>
-        </div>
+        </div> -->
         <div class="col-12">
-          <p class="text-center mb-0 mt-4">Copyright &copy;2020. All right reserved | This template is made with <span class="ti-heart fg-theme-red"></span> by <a href="https://www.macodeid.com/">MACode ID</a></p>
+          <p class="text-center mb-0 mt-4">Copyright &copy;2020. All right reserved | This template is made with <span class="ti-heart fg-theme-red"></span> by <a class="red-link" href="https://www.macodeid.com/">MACode ID</a><br>
+            Used under <a class="red-link" href="https://creativecommons.org/licenses/by/4.0/deed">CC BY 4.0</a> | Template's structure and information have been modified.</p>
         </div>
       </div>
     </div>
   </div> <!-- End footer -->
   
   
-  <script src="../assets/js/jquery-3.5.1.min.js"></script>
-    
-  <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    
-  <script src="../assets/vendor/owl-carousel/owl.carousel.min.js"></script>
-    
-  <script src="../assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-    
-  <script src="../assets/vendor/isotope/isotope.pkgd.min.js"></script>
-    
-  <script src="../assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
-    
-  <script src="../assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
-
-  <script src="../assets/vendor/wow/wow.min.js"></script>
-
-  <script src="../assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
-
-  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-
-  <script src="../assets/js/google-maps.js"></script>
-    
-  <script src="../assets/js/topbar-virtual.js"></script>
-
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
-  
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+  <!-- <script src="assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script> -->
+  <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+  <script src="assets/vendor/wow/wow.min.js"></script>
+  <script src="assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/js/topbar-virtual.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
