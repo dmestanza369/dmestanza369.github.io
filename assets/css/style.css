@@ -7,16 +7,16 @@
 }
 
 .navbar {
-  background-color: rgba(116, 116, 116, 0.7)!important;
+  background-color: rgba(36, 2, 2, 0.7)!important;
 }
 
 .badge {
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 1) !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6) !important;
 }
 
 .green-badge {
-  background-color: rgba(139, 198, 63, 0.15) !important;
-  color: #8cc63f !important;
+  background-color: rgba(109, 175, 23, 0.15) !important;
+  color: #6b9c2b !important;
 }
 
 .orange-badge {
@@ -27,4 +27,43 @@
 .purple-badge {
   background-color: rgba(111, 66, 193, 0.15) !important;
   color: #9b7cd4 !important;
+}
+
+.page-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), #fff);
+  z-index: 2;
+}
+
+.dark-red-text {
+  color: #240202;
+}
+
+.bronze {
+  color: #ad8a56;
+}
+
+.dark-bronze {
+  color: #6a3805;
+}
+
+.silver {
+  color: #d7d7d7;
+}
+
+.dark-silver {
+  color: #b4b4b4;
+}
+
+.gold {
+  color: #c9b037;
+}
+
+.dark-gold {
+  color: #af9500;
 }
