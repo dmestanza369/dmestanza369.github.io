@@ -10,23 +10,25 @@
   background-color: rgba(36, 2, 2, 0.7)!important;
 }
 
-.badge {
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6) !important;
-}
-
 .green-badge {
-  background-color: rgba(109, 175, 23, 0.15) !important;
-  color: #6b9c2b !important;
+  background-color: rgba(25, 20, 20, 0.35) !important;
+  color: rgb(29, 185, 84) !important;
 }
 
 .orange-badge {
-  background-color: rgba(253, 125, 20, 0.15) !important;
-  color: #fd7e14 !important;
+  background-color: rgba(255, 136, 0, 0.35) !important;
+  color: rgba(255, 51, 0) !important;
 }
 
 .purple-badge {
-  background-color: rgba(111, 66, 193, 0.15) !important;
-  color: #9b7cd4 !important;
+  background-color: rgba(155, 124, 212, 0.35) !important;
+  color: rgb(111, 66, 193) !important;
+}
+
+.red-badge {
+  background-color: rgba(197, 18, 18, 0.35) !important;
+  color: rgb(255, 225, 225) !important;
+
 }
 
 .page-home::before {
@@ -42,6 +44,7 @@
 
 .dark-red-text {
   color: #240202;
+  font-weight: bold;
 }
 
 .bronze {
